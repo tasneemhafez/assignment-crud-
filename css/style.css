@@ -1,0 +1,42 @@
+body{
+ font-family: 'Pacifico', cursive;
+ box-sizing: border-box;
+ list-style: none;
+ background-color: #F7ECDE;
+ border: none;
+}
+.contant h1{
+    font-size: 50px;
+    font-family:"Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate; 
+    
+}
+.contant h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    left: 0;
+    bottom: 50px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+ .Book-body{
+border-width: 2px 0 2px 0;
+border-style: dotted;
+border-color: #352e28;
+}
+.Book-body h2{
+    font-family: "Righteous";
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+.btn-visit a{
+color:#fff;
+text-decoration: none;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="stylesheet" href="/webfonts/"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<div class="container">
+    <div class="contant d-flex justify-content-center align-items-center ">
+    <h1 class="py-5 position-relative">Bookmarker</h1>
+    </div>
+<div class="Book-body w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+    <h2>
+        <i class="fa-solid fa-bookmark" style="color: #198754;"></i>
+        Bookmark your favorite sites
+        
+        <i class="fa-solid fa-bookmark" style="color: #b5ac49;"></i>
+            
+    </h2>
+    <div class="sit-name w-100 d-flex flex-column justify-content-center ">
+    <label for="bookmarkName" class="pb-2 fw-semibold"><i class="fa-solid fa-book-bookmark pe-2"></i>
+        Site Name</label>
+    <input  oninput="validitionName ()" type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName">
+    <div id="nameMassage"class="alert alert-danger d-none">it should contain first letter capitel, followed by From three to ten  letters small</div>
+    </div>
+    <div class="site-url w-100 d-flex flex-column justify-content-center">
+        <label for="bookmarkURL" class="pb-2 fw-semibold"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+        <input oninput="validitionUrl ()" type="url" placeholder="Website URL" class="form-control" id="bookmarkURL">
+        <div id="urlMassage" class="alert alert-danger d-none"> It should contain link </div>
+    </div>
+    <button onclick="addBook()"class="btn btn-submit px-5 bg-danger" id="submitBtn">Submit</button>
+</div>
+<table class="table mt-4 text-center bg-light">
+    <thead>
+        <tr>
+            <th>id</th>
+    <th>Website Name</th>
+    <th>Visit</th>
+    <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="tabelBody">
+       <tr>
+        <td></td> 
+</tr> 
+
+    </tbody>
+</table>  
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
